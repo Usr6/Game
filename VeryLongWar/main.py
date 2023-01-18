@@ -144,7 +144,7 @@ class Board:
                     surf, rect = underLoad('sword.png', os.path.join('gameElements', army[i][i1][4]),
                                            ((i1 + 1) * tile_width, (i + 1) * tile_height))
                     self.screen.blit(surf, rect)
-                    minushp = 64 // 4 * army[i][i1][5]
+                    minushp = 64 // 3 * army[i][i1][5]
                     pygame.draw.rect(self.screen, pygame.Color('black'), (x + 5, y + 5, 70, 10))
                     pygame.draw.rect(self.screen, pygame.Color('red'), (x + 8, y + 7, minushp, 6))
                 elif army[i][i1][0] == ']':
